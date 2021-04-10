@@ -1,0 +1,53 @@
+<form class="row g-3" [formGroup]="fG">
+  <div class="col-md-6">
+    <label for="name" class="form-label">Nombre</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      formControlName="name"
+      placeholder=""
+      [class.is-invalid]="nameNoValid"
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="apellido" class="form-label">Apellido</label>
+    <input
+      type="text"
+      class="form-control"
+      id="apellido"
+      formControlName="patronus"
+      [class.is-invalid]="lastNameNoValid"
+    />
+  </div>
+  <div class="col-6">
+    <label for="age" class="form-label">Edad</label>
+    <input
+      type="text"
+      class="form-control"
+      id="age"
+      placeholder=""
+      formControlName="yearOfBirth"
+      [class.is-invalid]="ageNoValid"
+    />
+  </div>
+
+  <div class="col-md-6">
+    <label for="casa" class="form-label">Casa</label>
+    <select id="casa" class="form-select" formControlName="house">
+      <option selected>Seleccione...</option>
+      <option value="gryffindor">Gryffindor</option>
+      <option value="slytherin">Slytherin</option>
+      <option value="ravenclaw">Ravenclaw</option>
+      <option value="hufflepuff">Hufflepuff</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="hidden" value="../../../../../assets/image/hogwarts.png" formControlName="image">
+  </div>
+
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" [disabled]="fG.invalid"  (click)="saveForm()">Sign in</button>
+  </div>
+</form>

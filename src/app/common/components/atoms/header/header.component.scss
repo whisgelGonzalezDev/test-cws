@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  padding: 1em;
+  flex-direction: row;
+  .logo {
+    width: 3em;
+    object-fit: contain;
+
+  }
+}

@@ -1,0 +1,21 @@
+.container {
+
+  .imgPerfil{
+    object-fit: contain;
+    border-radius: 5em;
+    width: 3em;
+    height: 3em;
+  }
+
+.table-red {
+  --bs-table-bg: #bd0f0f9c !important;
+    --bs-table-striped-bg: #d45f1af0 !important;
+    --bs-table-striped-color: #fff !important;
+    --bs-table-active-bg: #ff000000 !important;
+    --bs-table-active-color: #fff !important;
+    --bs-table-hover-bg: #0a0a0abd !important;
+    --bs-table-hover-color: #b9434300 !important;
+    color: #fff !important;
+    border-color: #f9f7ff !important;
+}
+}

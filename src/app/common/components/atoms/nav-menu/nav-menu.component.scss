@@ -1,0 +1,27 @@
+.nav {
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	align-items: center;
+  padding: 1em;
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	a:hover {
+		font-size: 24px;
+		transition: 0.2s;
+	}
+
+	a.active {
+		font-size: 24px;
+		font-weight: bold;
+	}
+  .dropdown-menu {
+    background: #dd1111bd ;
+  }
+}

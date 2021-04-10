@@ -1,0 +1,16 @@
+<nav class="nav">
+  <a (click)="clickHome()">Inicio</a>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false">Personajes</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" [href]="['/characters/gryffindor']">Griffyndor </a></li>
+      <li><a class="dropdown-item" [href]="['/characters/slytherin']">Slytherin </a></li>
+      <li><a class="dropdown-item" [href]="['/characters/ravenclaw']">Ravenclaw </a></li>
+      <li><a class="dropdown-item" [href]="['/characters/hufflepuff']">Hufflepuff </a></li>
+    </ul>
+  </li>
+	<a (click)="clickTeachers()">Profesores</a>
+	<a (click)="clickStudents()">Estudiantes</a>
+	<a (click)="clickAddStudents()">Agregar Estudiante</a>
+</nav>
